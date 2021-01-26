@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rootuser/Desktop/OOP345NAA/WS01/event.cpp
+event.h
+/Users/rootuser/Desktop/OOP345NAA/WS01/event.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS01/event.h
+iostream
+-
+cstring
+-
+

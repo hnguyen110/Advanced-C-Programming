@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rootuser/Desktop/OOP345NAA/WS02/TimedEvents.cpp
+TimedEvents.h
+/Users/rootuser/Desktop/OOP345NAA/WS02/TimedEvents.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS02/TimedEvents.h
+iostream
+-
+string
+-
+chrono
+-
+
