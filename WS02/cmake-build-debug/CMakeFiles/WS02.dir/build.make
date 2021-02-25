@@ -129,9 +129,6 @@ WS02: CMakeFiles/WS02.dir/w2_p2.cpp.o
 WS02: CMakeFiles/WS02.dir/TimedEvents.cpp.o
 WS02: CMakeFiles/WS02.dir/StringSet.cpp.o
 WS02: CMakeFiles/WS02.dir/build.make
-WS02: lib/libgtestd.a
-WS02: lib/libgtest_maind.a
-WS02: lib/libgtestd.a
 WS02: CMakeFiles/WS02.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rootuser/Desktop/OOP345NAA/WS02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable WS02"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/WS02.dir/link.txt --verbose=$(VERBOSE)

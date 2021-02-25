@@ -1,0 +1,71 @@
+The difference between the implementations/utilizations of a functor and a lambda expression. When is appropriate to use each one?
+Both functor and lambda expression are serving the same purpose, however the main difference between them is that functor need to be defined inside the class 
+because we need to overload the () operator while for the lambda expression we can defined it outside of a class and implement the same logic as a functor.
+We usually use the functor if we want to keep the logic of the class that we are trying to create within itself for encapsulation and as result, it will make the code to be much more simple, organize but this is not so flexible compare to the lambda expression if we need to modify the logic of the functor.
+What I am trying to say is that if you want to only write a SINGLE implementations of a logic that you know it is not going to change in the future or at least it is consistent for a period of time 
+then it make sense to just keep everything to be simple and write everything inside the class to keep the client code to be cleaner since we are the one who define the logic.
+However, if you know that the logic is going to change overtime and that logic is not consistent for example initially you create a functor to compare 2 numbers, but what if you want to change it to add 2 numbers
+this is where lambda expression can be better because you will let the client to defined the implementations of the lambda and all you need to do is to create a abstrat method of the lambda in the class to accept the lambda implementations from the user 
+By doing this, you make the code to be closed for modification and prevent bugs in the future because the lambda expression behaviour is not part of the class and it need to be defined by the client code if they use the class.
+
+The constructor for SpellChecker generates an exception in certain conditions. How would you change your code to achieve the same result, but without exceptions (both on the constructor and on the client side)? Compare the two solutions.
+The only way that we can do to check for exception without using exception syntax is that we need to print out the exception message and if an exception happens then we need to create a default constructor to set the object to a safe empty state.
+This way can prevent unexpected behaviour that related to the memory but compare to use exception, we need to write more code that is longer and easier to get bugs because first of all we need to print out the error message at every place that the exception can occurs, next we are wasting memory because we are creating objects that we never need to use.
+If we use exception handling then when an exception comes then the computer will redirect us to the catch and in here we can write code that handle all exceptions at one place and it keep everything to be more organize thus prevent bugs and as a result cleaner code. 
+If an exception happens here, then we can also clean up the memory for the current object here as well, it will save the memory and we do not need to care about the object that is being wasted like if we don't use exception handling.
+
+The classes Movie and Book contain almost identical logic in loading data from the file. How would you redesign the classes in order not to duplicate that logic?
+I designed a module called Utils that contain the logic for extracting the information from the data file.
+By doing this, it will help to reuse the same logic of extracting information for both modules and also it make the code to be cleaner and easier to maintain because if I need to change the logic for the extracting function then I only need to change at one place and it make the code to be cleaner
+The matrix server won't allow me to add the Utils module because it contains the CPP file that the server does not take so I need to put everything in the header file of Utils.
+When I submit the program you can not see the module so I paste the logic inside the w5_p2.cpp file. 
+But since the logic of extracting data is the same for both file, then it is better to write the implementation inside the Utils file and keep the job of each function, constructor to be separate from each other to make less dependent on each other and we can resuse the code for multiple places.
+
+#ifndef WS05_UTILS_H
+#define WS05_UTILS_H
+
+#include <string>
+
+namespace sdds {
+    class Utils {
+    public:
+        static std::string trim(const std::string &string) {
+            size_t first = string.find_first_not_of(' ');
+            size_t last = string.find_last_not_of(' ');
+            std::string result;
+            if (first == last) {
+                result = string;
+            } else {
+                auto index = first;
+                last++;
+                while (index < last) {
+                    result += string[index];
+                    ++index;
+                }
+            }
+            return result;
+        }
+
+        static std::string extract(const std::string &string, const char &delimiter, size_t &position) {
+            std::string result = "";
+            for (auto index = position; index < string.length(); ++index) {
+                ++position;
+                if (string[index] != delimiter && string[index] != '\n')
+                    result += string[index];
+                else break;
+            }
+            return trim(result);
+        }
+    };
+}
+
+
+#endif
+
+The classes Movie and Book are instantiated from the main() function using a custom constructor, but they also contain a default constructor. Is the default constructor necessary? Could you remove it? Justify your answer.
+No it will not work if we remove default constructor without adding {} in the private fields because of this line of code of Movie and the same code for Book as well in the main file
+Movie movies[5]; 
+When we create an array of Movie or Book, it basically uses the default constructor to initialize the objects 
+If we do not have the definition of the default constructor the computer will complain because it does not know how to create an empty object
+If we want to avoid this, the what we need to do is in the private fields we need to add {} after each one
+Using this one is basically do the same job as the default constructor but in anyway we need the default constructor to initialize the empty array.

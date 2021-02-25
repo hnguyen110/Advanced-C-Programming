@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rootuser/Desktop/OOP345NAA/Midterm/Custom-Type/Bouquet.h
+iostream
+-
+string
+-
+
+/Users/rootuser/Desktop/OOP345NAA/Midterm/Custom-Type/main.cpp
+iostream
+-
+Bouquet.h
+/Users/rootuser/Desktop/OOP345NAA/Midterm/Custom-Type/Bouquet.h
+

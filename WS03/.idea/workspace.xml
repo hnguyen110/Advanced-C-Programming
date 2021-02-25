@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="WS03" targetName="WS03" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f9ba9019-e7a8-412a-89e7-4ee073e3ee44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/WS03.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pair.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pair.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PairSummable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PairSummable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Set.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Set.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SetSummable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SetSummable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/w3_p2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/StringSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/StringSet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/StringSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/StringSet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/TimedEvents.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/TimedEvents.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/TimedEvents.h" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/TimedEvents.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/WS02.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/WS02" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/WS02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/WS02.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/WS02.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS02/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../WS02/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1o3BB77xJeKFkiCq4ZVOGmSXjFE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WS03" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="products.txt sales.txt" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="WS03" TARGET_NAME="WS03" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="WS03" RUN_TARGET_NAME="WS03">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9ba9019-e7a8-412a-89e7-4ee073e3ee44" name="Default Changelist" comment="" />
+      <created>1612505254858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612505254858</updated>
+      <workItem from="1612505256586" duration="3404000" />
+      <workItem from="1612552470905" duration="253000" />
+      <workItem from="1612642835660" duration="317000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/w3_p2.cpp</url>
+          <line>19</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rootuser/Desktop/OOP345NAA/WS04/ConfirmationSender.cpp
+ConfirmationSender.h
+/Users/rootuser/Desktop/OOP345NAA/WS04/ConfirmationSender.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS04/ConfirmationSender.h
+Reservation.h
+/Users/rootuser/Desktop/OOP345NAA/WS04/Reservation.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS04/Reservation.h
+string
+-
+iostream
+-
+
+/Users/rootuser/Desktop/OOP345NAA/WS04/Restaurant.cpp
+Restaurant.h
+/Users/rootuser/Desktop/OOP345NAA/WS04/Restaurant.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS04/Restaurant.h
+iostream
+-
+Reservation.h
+/Users/rootuser/Desktop/OOP345NAA/WS04/Reservation.h
+

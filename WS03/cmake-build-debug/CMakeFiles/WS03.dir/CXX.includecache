@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rootuser/Desktop/OOP345NAA/WS03/Pair.h
+iostream
+-
+
+/Users/rootuser/Desktop/OOP345NAA/WS03/PairSummable.h
+Pair.h
+/Users/rootuser/Desktop/OOP345NAA/WS03/Pair.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS03/Set.h
+iostream
+-
+
+/Users/rootuser/Desktop/OOP345NAA/WS03/SetSummable.h
+Set.h
+/Users/rootuser/Desktop/OOP345NAA/WS03/Set.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS03/w3_p2.cpp
+fstream
+-
+iostream
+-
+iomanip
+-
+string
+-
+SetSummable.h
+/Users/rootuser/Desktop/OOP345NAA/WS03/SetSummable.h
+PairSummable.h
+/Users/rootuser/Desktop/OOP345NAA/WS03/PairSummable.h
+SetSummable.h
+/Users/rootuser/Desktop/OOP345NAA/WS03/SetSummable.h
+PairSummable.h
+/Users/rootuser/Desktop/OOP345NAA/WS03/PairSummable.h
+

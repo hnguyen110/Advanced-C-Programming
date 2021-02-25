@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/Users/rootuser/Desktop/OOP345NAA/WS02/StringSet.cpp
+StringSet.h
+/Users/rootuser/Desktop/OOP345NAA/WS02/StringSet.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS02/StringSet.h
+iostream
+-
+string
+-
+cstring
+-
+fstream
+-
+
 /Users/rootuser/Desktop/OOP345NAA/WS02/TimedEvents.cpp
 TimedEvents.h
 /Users/rootuser/Desktop/OOP345NAA/WS02/TimedEvents.h
@@ -17,4 +31,22 @@ string
 -
 chrono
 -
+
+/Users/rootuser/Desktop/OOP345NAA/WS02/w2_p2.cpp
+iostream
+-
+iomanip
+-
+utility
+-
+string
+-
+StringSet.h
+/Users/rootuser/Desktop/OOP345NAA/WS02/StringSet.h
+StringSet.h
+/Users/rootuser/Desktop/OOP345NAA/WS02/StringSet.h
+TimedEvents.h
+/Users/rootuser/Desktop/OOP345NAA/WS02/TimedEvents.h
+TimedEvents.h
+/Users/rootuser/Desktop/OOP345NAA/WS02/TimedEvents.h
 
