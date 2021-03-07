@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rootuser/Desktop/OOP345NAA/WS06/Car.h
+string
+-
+iostream
+-
+Vehicle.h
+/Users/rootuser/Desktop/OOP345NAA/WS06/Vehicle.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS06/Racecar.h
+Car.h
+/Users/rootuser/Desktop/OOP345NAA/WS06/Car.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS06/Utilities.cpp
+Utilities.h
+/Users/rootuser/Desktop/OOP345NAA/WS06/Utilities.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS06/Utilities.h
+iostream
+-
+string
+-
+Vehicle.h
+/Users/rootuser/Desktop/OOP345NAA/WS06/Vehicle.h
+Car.h
+/Users/rootuser/Desktop/OOP345NAA/WS06/Car.h
+Racecar.h
+/Users/rootuser/Desktop/OOP345NAA/WS06/Racecar.h
+
+/Users/rootuser/Desktop/OOP345NAA/WS06/Vehicle.h
+iostream
+-
+string
+-
+

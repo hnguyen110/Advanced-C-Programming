@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rootuser/Desktop/OOP345NAA/Project/MS1/Station.h
+iostream
+-
+string
+-
+
+/Users/rootuser/Desktop/OOP345NAA/Project/MS1/Utilities.h
+iostream
+-
+string
+-
+
+/Users/rootuser/Desktop/OOP345NAA/Project/MS1/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+Station.h
+/Users/rootuser/Desktop/OOP345NAA/Project/MS1/Station.h
+Station.h
+/Users/rootuser/Desktop/OOP345NAA/Project/MS1/Station.h
+Utilities.h
+/Users/rootuser/Desktop/OOP345NAA/Project/MS1/Utilities.h
+Utilities.h
+/Users/rootuser/Desktop/OOP345NAA/Project/MS1/Utilities.h
+
