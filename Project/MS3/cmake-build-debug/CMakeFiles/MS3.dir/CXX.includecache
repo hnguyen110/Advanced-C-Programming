@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rootuser/Desktop/OOP345NAA/Project/MS3/CustomerOrder.h
+iostream
+-
+string
+-
+Station.h
+/Users/rootuser/Desktop/OOP345NAA/Project/MS3/Station.h
+
+/Users/rootuser/Desktop/OOP345NAA/Project/MS3/Station.h
+iostream
+-
+string
+-
+
+/Users/rootuser/Desktop/OOP345NAA/Project/MS3/Workstation.cpp
+Workstation.h
+/Users/rootuser/Desktop/OOP345NAA/Project/MS3/Workstation.h
+
+/Users/rootuser/Desktop/OOP345NAA/Project/MS3/Workstation.h
+deque
+-
+CustomerOrder.h
+/Users/rootuser/Desktop/OOP345NAA/Project/MS3/CustomerOrder.h
+Station.h
+/Users/rootuser/Desktop/OOP345NAA/Project/MS3/Station.h
+
