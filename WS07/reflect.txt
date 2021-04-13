@@ -1,0 +1,58 @@
+1. List all the STL functions that you have used in this workshop; explain your reasoning for choosing each one, and not another
+In this workshop I used accumulate to calculate the total length of all the songs in the collection, we can also use for each to to the same thing but the code will become a bit longer therefore I choose accumulate instead of using for each function
+I also use the for each to loop through all element in the array to print them as well as checking the album name to remove the name. Using the for loop make the code to become sorter, easier to understand instead of using normal loop and on the other hand we are also combinding the functional styling of writting program which is make the code to be easier to understand since the name of the loop speak for itself of what is is doing (FOR EACH) 
+I used the find_if function to search for a song that has the artist name matching the name that I pass into the function, instead of using for_each which can also get the job done, using the find_if is easier to understand in this case because first of all the find_if describe the task of the function which is searching for the song that contains the name of the artist and it will stop searching if it found something which is an optimization comapre to for_each loop second, like the one on the top using find_if will be clearer (if a programmer read the code they will understand what the function will do instead of reading the code and figure what the code is doing)
+I used copy_if function to return all the song that contains the name of the artist instead of using the for_each because same reasons copy_if describe the job it is doing much clearer compare to using for_each. All we need to do is passing a lambda function into copy_if which tell it copy if the song has the name of the artist that we are looing for
+Finally I use the sort function to sort the container, first of all using the sort function will help to build the application much faster because you don't have to make the sort function, second the stl sort function has been optimized and test by the creator to make sure the performance can be performed well no matter what kind of stuff we are sorting as long as we pass in the right condition, and finally using sort function of stl make the code so much sorter because you do not need to make the sort function as well as making the overload function of sort based on letter or number because the stl handle all of that for you already,you just need to pass in the condition to perform sorting and the sort function will sort it
+
+2. Present the advantages of using STL algorithms vs. implementing the functionality by yourself using loops
+    + First of all it make the code to be much readable and it is much shorter since we do not need to write the implementation of the loop
+    + Second it perform the functional styling of programming which is a good thing because if you read the code you can understand that you are trying to loop through something with for_each
+        the word for_each speaks for itself of what it is trying to do instead of something like this
+        if you are reading this code here and you are not a programmer then it will be a bit hard to understand what the code is doing    
+        for (int index = 0; index < _collection.size(); ++index) {
+            cout << _collection[index]
+        }
+        but if you are reading this kind of code then for sure you know you are looping through the collection to print the song since it is more English text
+        for_each(song : _collection) {
+            cout << song
+        }
+    + Third because you are passing the lambda expression into the stl function, it is a good practice because we make the code to be much less sticking to each other 
+    For instance the sort function is some kind of looping but it is implemented to perform sorting as well 
+    It let use to pass the lambda expression as the function that it will use to perform sorting
+    This is good because we can dynamic change the logic of comparision by passing different lambda expression into the sort algorithms
+    If you think of it, first of all the code of sorting does not change the only thing that change is the sorting logic 
+    This is called strategy design pattern because the code of sorting should not change and the fact that we are passing the logic into the sort function will make sure if something is wrong with the sort function then it will not break the sort and we only need to fixed the code of the comparision logic only
+    + Finally is the performance, as a new programmer it is hard to write code that is efficient such as the stl sort function by using sort and also other function in stl, you can make sure that the performance can be carefully tested and you only need to focus on how to make the logic of the lambda expression
+
+3. The function that sorts the collection of songs receives as a parameter the field name to use; this can create errors if the client specifies an invalid field (or misspells it). How would you redesign that function to prevent the client to specify an invalid string, allowing any error to be detected by the compiler?
+We can fix this by adding the throw error if it gets the invalid option from the user
+Next we gonna wrap the calling to sort function in the main file in a try catch and by doing this both the compiler and user will know if there is an invalid option was passed into this function
+We can also help them by printing the option that should be passing in if there is an exception as well which are (title, album and length)
+void SongCollection::sort(const std::string &option) {
+        if (option == "title") {
+            std::sort(_collection.begin(),
+                      _collection.end(),
+                      [=](const Song &first, const Song &second) {
+                          return first.m_title < second.m_title;
+                      });
+
+        } else if (option == "album") {
+            std::sort(_collection.begin(),
+                      _collection.end(),
+                      [=](const Song &first, const Song &second) {
+                          return first.m_album < second.m_album;
+                      });
+
+        } else if (option == "length") {
+            std::sort(_collection.begin(),
+                      _collection.end(),
+                      [=](const Song &first, const Song &second) {
+                          return first.m_length < second.m_length
+                                 || (first.m_length == second.m_length
+                                     && first.m_price < second.m_price);
+                      });
+        } else {
+            throw std::string("Invalid option");
+        }
+    }

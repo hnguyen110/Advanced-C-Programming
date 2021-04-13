@@ -1,0 +1,22 @@
+Why do you need to deallocate the dynamically allocated memory in your vector?
+We need to do memory management in the vector in AutoShop module because the type that the vector is holding is Vehicle * which is just the address not the object of Vehicle      
+std::vector<Vehicle *> _vehicles;
+This vector only hold the address of the Vehicle type, therefore all the Vehicle object need to be allocated and deallocated outside manually
+The vector right now it is only dynamically holding the address of Vehicle if new Vehicle is added into the vector not the real Vehicle object itself
+If we want the vector take care of memory management as well, we need to remove the * sign so now when a new Vehicle object is added into the vector, the memory will be manage by the vector and we do not need to take care of memory management
+
+When building an object from the input file, different things can go wrong: the record represents an unknown type of vehicle, or record contains invalid data. How can the function loadData() detect what went wrong? Can you think at another solution than the one you have implemented?
+We are wrapping the code that can create exceptions in a try catch block in the loadData function
+This will help to handle all the exceptions that can occur during the run time and we will handle the error if something is going wrong in this catch block
+This will allow the program to keep running without any problem because we already tell the program what to do if something is not working such as when it throw an exception in the catch block
+There is other way to work around how to handle exceptions in this one so first of all, if you look into the code that can throw exception in the createInstance function
+throw std::string("Unrecognized record type: [") + _tag + std::string("]");
+We don't have to throw any exception in this one, instead we just need to print the error message out so we can remove the try catch block in the main function
+For other code that can throw exception in this function we do not need to do anything because it is already living inside the try catch block, therefore the main do not need to implement another try catch block to handle this one
+
+In this workshop you had to use std::list<sdds::Vehicle*> and std::vector<sdds::Vehicle*> to store a collection of vehicles as pointers. Could you have used std::list<sdds::Vehicle> and std::vector<sdds::Vehicle> instead? Justify your answer!
+We can just use Vehicle instead of Vehicle* because first of all we do not need to take care of the memory management and it is easier this way to prevent leaking issues
+Second the code will be shorter a bit however, because we use Vehicle* so there will be no copying but if we use Vehicle then maybe we need to implement the move constructor or move operator to prevent the application to make copies
+In short, there is nothing stoping us to use Vehicle type, but there is a price that we need to delete the copy behaviour and add the move behaviour into the application
+But if we use Vehicle* then we do not need to do anything because since the vector takes the address it will always refer to the original object therefore it is more efficient compare to use Vehicle type
+It is just we need to do memory management a bit

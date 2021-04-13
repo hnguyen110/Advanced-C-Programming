@@ -10,6 +10,7 @@ class Bouquet {
     static size_t _bouquetCounter;
 
 public:
+
     Bouquet();
 
     Bouquet(std::string *flowerName, size_t flowerNo);
@@ -17,6 +18,9 @@ public:
     ~Bouquet();
 
     bool operator==(const Bouquet &bouquet) const;
+    friend Bouquet operator+(const Bouquet& aaa, std::string) {
+        return *this;
+    }
 
 public:
     bool hasFlower(const std::string &name, const Bouquet &bouquet) const;

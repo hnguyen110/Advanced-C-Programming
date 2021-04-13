@@ -1,0 +1,33 @@
+The advantage that smart pointer syntax provides. Use example from your code to support your explanation.
+With the smart pointer, it provides us the ability to manage the memory management for us and we do not need to call the delete function to free the memory
+This is important because in our program, if there is an exception happens, it means the memory of the Product object that we create will not be freed and this will lead to memory leaking 
+You can have a look at this code here, if an exception happens then the code will not reach the delete command to free the memory
+
+auto *product = new Product(desc[_desc].desc, price[_price].price);
+product->validate();
+priceList.operator+=(*product);
+delete product;
+
+By using smart pointer, it wraps the memory allocation of the new product and the smart pointer will detect when the object is no longer used or out of scope to call the destructor for us
+Therefore if an exception happens, then the smart pointer can still detect that the object is not longer needed and it will call the destructor to release the memory for us
+
+std::unique_ptr<Product> product(new Product(desc[_desc].desc, price[_price].price));
+product->validate();
+priceList.operator+=(*product);
+
+As you can see in this code, since the smart pointer will handle memory deallocation if an exception happens then it will handle the memory deallocation and we will not have leaking
+
+The difference between raw and smart pointer syntax in your solution.
+
+Raw pointer
+auto *product = new Product(desc[_desc].desc, price[_price].price);
+
+Smart pointer
+std::unique_ptr<Product> product(new Product(desc[_desc].desc, price[_price].price));
+
+As you can see smart pointer wraps the memory allocation of the product object in an instance of unique_ptr (is a kind of smart pointers) 
+So what it means is that we are making an instance of a smart pointer object
+Second we make an object of the product which is the piece of memory that we need to manage in this case
+Finally we pass the instance of product to the smart pointer 
+What we just did is that we tell smart pointer hey this is the object that I need to manage, your job is to watch this object and free all the memory if it is no longer needed
+Also since we use smart pointer there is no need for handle the memory manually, therefore, we do not have the delete statement like when using raw pointer
