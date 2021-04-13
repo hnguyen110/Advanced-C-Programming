@@ -1,3 +1,11 @@
+// Name: Hien Dao The Nguyen
+// Seneca Student ID: 103 152 195
+// Seneca email: hnguyen110@myseneca.ca
+// Date of completion: Thursday, April 8, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #ifndef MS3_WORKSTATION_H
 #define MS3_WORKSTATION_H
 
@@ -28,23 +36,6 @@ namespace sdds {
         void display(std::ostream &os) const;
 
         Workstation &operator+=(CustomerOrder &&order);
-
-        // For testing only
-//        [[nodiscard]] size_t retrieveOrdersSize() const {
-//            return _orders.size();
-//        }
-//
-//        [[nodiscard]] bool isOrdersEmpty() const {
-//            return _orders.empty();
-//        }
-//
-//        [[nodiscard]] bool isItemFilled(const std::string &str) const {
-//            return _orders.front().isItemFilled(str);
-//        }
-//
-//        [[nodiscard]] bool isFilled() const {
-//            return _orders.front().isFilled();
-//        }
     };
 }
 

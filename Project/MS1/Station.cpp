@@ -1,3 +1,11 @@
+// Name: Hien Dao The Nguyen
+// Seneca Student ID: 103 152 195
+// Seneca email: hnguyen110@myseneca.ca
+// Date of completion: Friday, March 26, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #include "Station.h"
 #include "Utilities.h"
 

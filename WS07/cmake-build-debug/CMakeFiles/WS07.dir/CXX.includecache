@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rootuser/Desktop/OOP345NAA/WS07/SongCollection.h
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+list
+-
+algorithm
+-
+numeric
+-
+iomanip
+-
+
+/Users/rootuser/Desktop/OOP345NAA/WS07/main.cpp
+iostream
+-
+iomanip
+-
+string
+-
+list
+-
+SongCollection.h
+/Users/rootuser/Desktop/OOP345NAA/WS07/SongCollection.h
+SongCollection.h
+/Users/rootuser/Desktop/OOP345NAA/WS07/SongCollection.h
+

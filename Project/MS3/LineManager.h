@@ -1,3 +1,11 @@
+// Name: Hien Dao The Nguyen
+// Seneca Student ID: 103 152 195
+// Seneca email: hnguyen110@myseneca.ca
+// Date of completion: Thursday, April 8, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #ifndef MS3_LINE_MANAGER_H
 #define MS3_LINE_MANAGER_H
 
@@ -5,6 +13,8 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
+#include <string>
+#include <unordered_map>
 #include "Workstation.h"
 
 namespace sdds {
@@ -23,9 +33,7 @@ namespace sdds {
 
         void display(std::ostream &os) const;
 
-        Workstation *firstStation() const;
-
-        bool isNextStation(const Workstation *workstation) const;
+        [[nodiscard]] Workstation *firstStation() const;
     };
 }
 

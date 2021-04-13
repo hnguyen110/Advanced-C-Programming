@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="WS09" targetName="WS09" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4d5b352-9a7d-408c-8ec3-8bcbb02ede0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../WS07/.idea/WS07.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS07/SongCollection.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS07/SongCollection.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS07/reflect.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS07/w7_p1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS07/w7_p2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/.idea/WS08.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/BadPrices.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/Descriptions.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/Element.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/List.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/Prices.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/Utilities.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/Utilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/sample_output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/w8_p1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WS08/w8_p2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/WS09.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecureData.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecureData.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/w9.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/Station.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS1/Station.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/Station.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS1/Station.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/Utilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS1/Utilities.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/Utilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS1/Utilities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/3.17.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/3.17.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/3.17.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/3.17.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/3.17.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/Station.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/Utilities.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/MS1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/MS1.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/Stations1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/Stations2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/lib/libgtest_maind.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/lib/libgtestd.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/CTestTestfile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock_main.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock_main.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock_main.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock_main.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock_main.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/CTestTestfile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googlemock/gmock.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest-distribution.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/Export/lib/cmake/GTest/GTestTargets-debug.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/Export/lib/cmake/GTest/GTestTargets.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/CTestTestfile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/generated/GTestConfig.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/generated/GTestConfigVersion.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/generated/gmock.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/generated/gmock_main.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/generated/gtest.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/generated/gtest_main.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/cmake-build-debug/unit-testing/googletest/googletest/gtest.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS1/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS1/ms1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS1/ms1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/MS3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/MS3.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/MS3.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/MS3.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/MS3.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/MS3.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/MS3/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/Autoshop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/Autoshop.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/Autoshop.h" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/Autoshop.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/Car.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/Car.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/Car.h" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/Car.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/Racecar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/Racecar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/Racecar.h" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/Racecar.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/Utilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/Utilities.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/Utilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/Utilities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/Vehicle.h" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/Vehicle.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WS06/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../WS06/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1qd5yvikxY8Pwo10IvNDWXkcNgn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WS09" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="input.txt encoded.dat.txt K " REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="WS09" TARGET_NAME="WS09" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="WS09" RUN_TARGET_NAME="WS09">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4d5b352-9a7d-408c-8ec3-8bcbb02ede0b" name="Default Changelist" comment="" />
+      <created>1617396885908</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617396885908</updated>
+      <workItem from="1617396888184" duration="8395000" />
+      <workItem from="1617418176315" duration="46000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SecureData.cpp</url>
+          <line>61</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

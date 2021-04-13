@@ -1,0 +1,33 @@
+// Name: Hien Dao The Nguyen
+// Seneca Student ID: 103 152 195
+// Seneca email: hnguyen110@myseneca.ca
+// Date of completion: Thursday, April 8, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
+Since this project needs to read the data from a text file, extracting the data correctly from a text file is very important.
+I create the extract token function by reading each character in the line that is not the delimiter.
+For this project, I did not add the trim functionality into the extracted token because the data file is clean already and there is no need to trim down the extra space since it is not required
+I want to keep the code to be simple and just enough to pass all the test cases to increase the performance of the application
+The description suggests us to use the string function to extract the string, however, this function is not suitable to do the job because we need to calculate the start and end position which makes the code to become a bit complicated since you need to do it at least 3 checks
+Therefore I think it is better to use normal C code to detect the delimiter and return the token.
+The next thing that I encountered was how to link all the workstation together and also get the first workstation in the linked list structure
+To link all the workstation together based on the order of the text file, I loop through all the workstations and check for any workstation that has the name matches the name in the first token of the text file
+Next, I will read the second token and also doing the loop again, when I found the second workstation I will link the first one to that one by setting the next station to of the first station to the second one.
+The linking is not a problem, however, finding the first workstation in the linked list is a problem. There are some ways to do this one, the best way to use a hashmap since we can detect the duplication of token and at the end, if there is one element in the hashmap that does not have duplication then it means that is the first one
+Using hashmap is good and in fact, it saves a lot of time as well but I did not use it because implement hashmap in C is quite tricky so what I did was using 2 loops and loop through the collection to check if there is any workstation that does not have any other workstation linked to
+This way is easier but it is not efficient as the first way however since the data is not that big using O(n^2) is the same as O(n) does not have that much performance difference.
+In this project I got some problem creating the final milestone. For some reason, the test cases to check the second milestone failed to check some other edge cases in my program which creates the bugs for the final milestone.
+To fix this problem I created a test file using Catch2 to perform some unit testing on the second milestone.
+I start to read all the requirements of the second milestone such as the constraints, the input and the output that the module needs.
+Then I develop each testing scenario to check if the code is working properly.
+I also read the test file that provided to me in the GitHub repository this testing file has pretty much everything that I need to test, however, it lacking the ability to check the moving order operation and some other features
+The most difficult thing when I debug this program is that since we need to use the STL for looping, I use the ForEach function at first. This function is quite hard to debug if some error is inside the loop.
+The debugger will skip the ForEach loop if we do not force it to go inside. This is the reason why I perform unit testing on the second module since I saw something went wrong when the order should be moved to the other workstation.
+I feel like using for_each is not needed in this project if you just loop through a collection, you can use for range syntax which makes the code to be shorter and we do not need to include the additional library.
+This project also does not implement the threading that I think it would be nice if we can do so
+So in this workshop, we are trying to fill the order at each workstation
+I think since they run different from each other and since the resource that they are working on are different from each other, so it means there is no racing condition will happen because each workstation only handle only one package at a time, therefore, there is not sharing in this case which can be an ideal for parallel programming
+Maybe in this project, the output needs to be the same and consistent for a leak check and comparing the answer, however, I think maybe we can implement threading if we leave the display part at the end of the program.
+If we separate the filling function and the display function from each other then I think it would be much easier and more efficient to implement threading in this project.

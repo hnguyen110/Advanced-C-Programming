@@ -1,8 +1,17 @@
+// Name: Hien Dao The Nguyen
+// Seneca Student ID: 103 152 195
+// Seneca email: hnguyen110@myseneca.ca
+// Date of completion: Thursday, April 8, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #ifndef MS2_CUSTOMER_ORDER_H
 #define MS2_CUSTOMER_ORDER_H
 
 #include <iostream>
 #include <string>
+#include <utility>
 #include "Station.h"
 
 namespace sdds {
@@ -11,7 +20,7 @@ namespace sdds {
         size_t m_serialNumber{0};
         bool m_isFilled{false};
 
-        Item(const std::string &src) : m_itemName(src) {};
+        explicit Item(std::string src) : m_itemName(std::move(src)) {};
     };
 
     class CustomerOrder {
@@ -24,7 +33,7 @@ namespace sdds {
     public:
         CustomerOrder();
 
-        CustomerOrder(const std::string &information);
+        explicit CustomerOrder(const std::string &information);
 
         CustomerOrder(const CustomerOrder &order);
 
@@ -36,9 +45,9 @@ namespace sdds {
 
         ~CustomerOrder();
 
-        bool isFilled() const;
+        [[nodiscard]] bool isFilled() const;
 
-        bool isItemFilled(const std::string &itemName) const;
+        [[nodiscard]] bool isItemFilled(const std::string &itemName) const;
 
         void fillItem(Station &station, std::ostream &os);
 

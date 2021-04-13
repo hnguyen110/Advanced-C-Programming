@@ -1,0 +1,40 @@
+Why was necessary to use binary files in this workshop and how did you use them
+We need to use the XOR in Cryptor functor, since the bitwise operator need the binary input which is 0 and 1, we need to open the file in the binary format
+In linux system you do not need to specify open a file in binary format, the code will still work
+However in a windows machine, you need to use std::ifstream binaryFile(file, std::ios::binary) and binaryFile >> noskipws option
+The std::ios::binary tell the machine to read a file in the binary format and noskipws tell the machine not to skip the space because in a binary file, space is still a piece of data that was encode into binary
+We need to use the noskipws also because by default the in stream will skip the space, but as I said before, in binary file, space is still a piece of data that was encode into binary, so we need to read everything in the file to decode it back to normal.
+
+Why would be important to bind a function to its arguments, and how was it useful in this workshop
+Binding a function to its arguments will help to hardcode the constant value that will not change
+auto computingTask = std::bind(&converter, std::placeholders::_1, key, std::placeholders::_2, Cryptor());
+As you can see the converter always take in the key and a Crypto object
+By binding the function and the arguments to a variable, it will help to reduce the duplicate code that we need to pass in when we create a new thread
+std::thread(computingTask, text + index * workload, workload)
+When we create the new thread like this line, you do not need to pass in the key and the Crypto object since you already hardcode it when you do binding
+Also you can not pass a function call to the thread constructor, it only accept the lambda or the binding so if you do not do binding, and passing the function call into the thread it will not work since you are not suppose to run the converter while create an object of thread
+Instead you need to pass in the callback function and the parameter that is needed for that callback function, then the thread will use those information and call the converter when it is execute the task internally
+
+The advantages of using multiple threads, and how did you accomplished multi-threading in this workshop
+Using multiple threads allow a task which might take a long time to finish to be finished faster by allow the task to run on multiple processors at the same time
+In this workshop, I create 4 threads to run the task
+
+First I create a task for the thread to run on by binding the convert function and assign the arguments that the function need to perform the decode or encode operation
+auto computingTask = std::bind(&converter, std::placeholders::_1, key, std::placeholders::_2, Cryptor());
+
+Second I need to find the equal workload that each thread need to handle by dividing the total binary character by 4
+auto workload = nbytes / threadNo;
+
+Next, I use a vector and I create 4 thread objects and assign the task and the workload that I found earlier
+std::vector<std::thread> threadPool;
+threadPool.reserve(threadNo - 1);
+for (auto index = 0; index < threadNo - 1; ++index)
+    threadPool.emplace_back(std::thread(computingTask, text + index * workload, workload));
+
+Finally I let 4 threads to run at the same time and I use the join() function to tell the program to wait for all of these threads to complete before keep going
+for (auto &thread : threadPool)
+            thread.join();
+
+It is important to do this otherwise we gonna see weird result such as the decode or encode is not complete yet but the program already move on to the display function
+If that happens you can see something like weird characters displayed or even the program will crash
+To prevent the racing condition, I also let each thread to manage the same resource separately by assigning the resource that each thread need to compute by using different offset with this command text + index * workload

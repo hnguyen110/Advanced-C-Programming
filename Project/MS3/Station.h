@@ -1,3 +1,11 @@
+// Name: Hien Dao The Nguyen
+// Seneca Student ID: 103 152 195
+// Seneca email: hnguyen110@myseneca.ca
+// Date of completion: Thursday, April 8, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #ifndef MS1_STATION_H
 #define MS1_STATION_H
 
@@ -15,13 +23,13 @@ namespace sdds {
         static size_t _idGenerator;
 
     public:
-        Station(const std::string &information);
+        explicit Station(const std::string &information);
 
-        const std::string &getItemName() const;
+        [[nodiscard]] const std::string &getItemName() const;
 
         size_t getNextSerialNumber();
 
-        size_t getQuantity() const;
+        [[nodiscard]] size_t getQuantity() const;
 
         void updateQuantity();
 

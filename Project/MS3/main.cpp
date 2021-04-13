@@ -1,3 +1,11 @@
+// Name: Hien Dao The Nguyen
+// Seneca Student ID: 103 152 195
+// Seneca email: hnguyen110@myseneca.ca
+// Date of completion: Thursday, April 8, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -17,13 +25,13 @@ using namespace std;
 using namespace sdds;
 
 template<typename T>
-static void loadFromFile(const char*, vector<T>&);
+static void loadFromFile(const char *, vector<T> &);
+
 template<typename T>
-static void loadFromFile(const char*, vector<T*>&);
+static void loadFromFile(const char *, vector<T *> &);
 
 
-int main(int argc, char** argv)
-{
+int main(int argc, char **argv) {
     cout << "Command Line: " << argv[0];
     for (int i = 1; i < argc; i++)
         cout << " " << argv[i];
@@ -33,7 +41,7 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    vector<Workstation*> theStations;
+    vector<Workstation *> theStations;
     vector<CustomerOrder> theOrders;
 
     try {
@@ -45,14 +53,14 @@ int main(int argc, char** argv)
         cout << "========================================" << endl;
         cout << "=         Stations (summary)           =" << endl;
         cout << "========================================" << endl;
-        for (const auto* station : theStations)
+        for (const auto *station : theStations)
             station->Station::display(cout, false);
         cout << endl << endl;
 
         cout << "========================================" << endl;
         cout << "=          Stations (full)             =" << endl;
         cout << "========================================" << endl;
-        for (const auto* station : theStations)
+        for (const auto *station : theStations)
             station->Station::display(cout, true);
         cout << endl << endl;
 
@@ -74,7 +82,7 @@ int main(int argc, char** argv)
         cout << "========================================" << endl;
         cout << "=                Orders                =" << endl;
         cout << "========================================" << endl;
-        for (auto& order : theOrders) {
+        for (auto &order : theOrders) {
             order.display(std::cout);
             pending.push_back(std::move(order));
         }
@@ -101,7 +109,7 @@ int main(int argc, char** argv)
         while (!lm.run(cout));
         cout << endl << endl;
     }
-    catch (const string& msg) {
+    catch (const string &msg) {
         cerr << msg << '\n';
         return 2;
     }
@@ -109,16 +117,16 @@ int main(int argc, char** argv)
     cout << "========================================" << endl;
     cout << "=           Processed Orders           =" << endl;
     cout << "========================================" << endl;
-    for (const auto& o : completed)
+    for (const auto &o : completed)
         o.display(cout);
-    for (const auto& o : incomplete)
+    for (const auto &o : incomplete)
         o.display(cout);
     cout << endl << endl;
 
     cout << "========================================" << endl;
     cout << "=          Inventory (full)            =" << endl;
     cout << "========================================" << endl;
-    for (const Station* theItem : theStations)
+    for (const Station *theItem : theStations)
         theItem->display(cout, true);
     cout << endl;
 
@@ -130,8 +138,7 @@ int main(int argc, char** argv)
 }
 
 template<typename T>
-static void loadFromFile(const char* filename, vector<T>& theCollection)
-{
+static void loadFromFile(const char *filename, vector<T> &theCollection) {
     if (!filename) {
         throw string("ERROR: No filename provided.");
     }
@@ -140,8 +147,7 @@ static void loadFromFile(const char* filename, vector<T>& theCollection)
         throw string("Unable to open [") + filename + "] file.";
 
     string record;
-    while (!file.eof())
-    {
+    while (!file.eof()) {
         std::getline(file, record);
         T elem(record);
         theCollection.push_back(std::move(elem));
@@ -151,8 +157,7 @@ static void loadFromFile(const char* filename, vector<T>& theCollection)
 }
 
 template<typename T>
-static void loadFromFile(const char* filename, vector<T*>& theCollection)
-{
+static void loadFromFile(const char *filename, vector<T *> &theCollection) {
     if (!filename) {
         throw string("ERROR: No filename provided.");
     }
@@ -161,8 +166,7 @@ static void loadFromFile(const char* filename, vector<T*>& theCollection)
         throw string("Unable to open [") + filename + "] file.";
 
     string record;
-    while (!file.eof())
-    {
+    while (!file.eof()) {
         std::getline(file, record);
         theCollection.push_back(new T(record));
     }

@@ -1,3 +1,11 @@
+// Name: Hien Dao The Nguyen
+// Seneca Student ID: 103 152 195
+// Seneca email: hnguyen110@myseneca.ca
+// Date of completion: Friday, March 26, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -10,10 +18,9 @@
 using namespace std;
 using namespace sdds;
 
-static bool loadStations(const char*, vector<Station>&);
+static bool loadStations(const char *, vector<Station> &);
 
-int main(int argc, char** argv)
-{
+int main(int argc, char **argv) {
     cout << "Command Line: " << argv[0];
     for (int i = 1; i < argc; i++)
         cout << " " << argv[i];
@@ -25,15 +32,13 @@ int main(int argc, char** argv)
 
     //**************//
     vector<Station> theStations;
-    try
-    {
+    try {
         Utilities::setDelimiter(',');
         loadStations(argv[1], theStations);
         Utilities::setDelimiter('|');
         loadStations(argv[2], theStations);
     }
-    catch (const string& err)
-    {
+    catch (const string &err) {
         cerr << err << '\n';
         exit(2);
     }
@@ -41,14 +46,14 @@ int main(int argc, char** argv)
     cout << "========================================" << endl;
     cout << "=         Stations (summary)           =" << endl;
     cout << "========================================" << endl;
-    for (Station& theItem : theStations)
+    for (Station &theItem : theStations)
         theItem.display(cout, false);
     cout << endl << endl;
 
     cout << "========================================" << endl;
     cout << "=          Stations (full)             =" << endl;
     cout << "========================================" << endl;
-    for (Station& theItem : theStations)
+    for (Station &theItem : theStations)
         theItem.display(cout, true);
     cout << endl << endl;
 
@@ -69,26 +74,26 @@ int main(int argc, char** argv)
     cout << "=              Utilities               =" << endl;
     cout << "========================================" << endl;
     // create & initialize an array of input data
-    const struct { char delim; std::string data; } input[]
+    const struct {
+        char delim;
+        std::string data;
+    } input[]
             {
-                    { 'a', "a"},
-                    { 'b', "a" },
-                    { 'l', "Hello"},
-                    { ',', "apple,orange,banana,kiwi,strawberry,yellow watermellon" },
-                    { '|', "Gengar|Arcanine|Bulbasaur|Blaziken|C h a r i z a r d|Umbreon|Lucario|Eevee"}
+                    {'a', "a"},
+                    {'b', "a"},
+                    {'l', "Hello"},
+                    {',', "apple,orange,banana,kiwi,strawberry,yellow watermellon"},
+                    {'|', "Gengar|Arcanine|Bulbasaur|Blaziken|C h a r i z a r d|Umbreon|Lucario|Eevee"}
             };
 
-    for (auto& item : input)
-    {
+    for (auto &item : input) {
         Utilities::setDelimiter(item.delim);
         Utilities util;
         bool more = true; // if there are more tokens in the input string
         size_t pos = 0u; // position of the next token in the input string
         cout << "Data: [" << item.data << "]    Delimiter: [" << item.delim << "]\n";
-        while (more)
-        {
-            try
-            {
+        while (more) {
+            try {
                 auto token = util.extractToken(item.data, pos, more);
                 cout << "   Token: [" << token << "] [" << util.getFieldWidth() << "]\n";
             }
@@ -99,8 +104,7 @@ int main(int argc, char** argv)
     return 0;
 }
 
-bool loadStations(const char* filenameSt, vector<Station>& theStations)
-{
+bool loadStations(const char *filenameSt, vector<Station> &theStations) {
     std::ifstream file(filenameSt);
     if (!file)
         throw string("Unable to open [") + filenameSt + "] file";
@@ -108,8 +112,7 @@ bool loadStations(const char* filenameSt, vector<Station>& theStations)
     // each line from the file represents an item;
     // read one at a time and add it to the inventory
     string theRecord;
-    while (!file.eof())
-    {
+    while (!file.eof()) {
         std::getline(file, theRecord);
         Station newItem(theRecord);
         theStations.push_back(std::move(newItem));

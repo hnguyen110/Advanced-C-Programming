@@ -1,3 +1,11 @@
+// Name: Hien Dao The Nguyen
+// Seneca Student ID: 103 152 195
+// Seneca email: hnguyen110@myseneca.ca
+// Date of completion: Thursday, April 8, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #include "LineManager.h"
 #include "Utilities.h"
 
@@ -9,9 +17,9 @@ namespace sdds {
         sdds::Utilities::setDelimiter('|');
         Utilities util;
         std::ifstream configFile(file);
-        for (auto &station : stations) {
+        std::for_each(stations.begin(), stations.end(), [&](Workstation *station) {
             station->setNextStation(nullptr);
-        }
+        });
         if (configFile.is_open()) {
             std::string buffer;
             while (configFile.good()) {
@@ -19,10 +27,10 @@ namespace sdds {
                 size_t position = 0;
                 bool more = true;
                 std::string token = util.extractToken(buffer, position, more);
-                for (auto &station : stations) {
+                std::for_each(stations.begin(), stations.end(), [&](Workstation *station) {
                     if (station->getItemName() == token)
-                        _workstations.push_back(station);
-                }
+                        _workstations.emplace_back(station);
+                });
                 if (buffer.find(Utilities::getDelimiter()) != std::string::npos) {
                     auto firstStation = std::find_if(stations.begin(), stations.end(), [&](Workstation *station) {
                         return station->getItemName() == token;
@@ -42,13 +50,11 @@ namespace sdds {
     }
 
     void LineManager::linkStations() {
-        std::vector<Workstation *> _linkedStation;
-        auto nextStation = firstStation();
-        do {
-            _linkedStation.emplace_back(nextStation);
-            if (nextStation != nullptr) nextStation = const_cast<Workstation *>(nextStation->getNextStation());
-        } while (nextStation != nullptr);
-        _workstations = std::move(_linkedStation);
+        auto next = firstStation();
+        for (auto &workstation : _workstations) {
+            workstation = next;
+            next = const_cast<Workstation *>(next->getNextStation());
+        }
     }
 
     bool LineManager::run(std::ostream &os) {
@@ -72,21 +78,28 @@ namespace sdds {
         });
     }
 
+    const auto push = [](std::unordered_map<std::string, int> &hashmap, const std::string &key) {
+        const auto &record = hashmap.find(key);
+        if (record == hashmap.end())
+            hashmap.insert(std::make_pair(key, 0));
+        else record->second = 1;
+    };
+
     Workstation *LineManager::firstStation() const {
         Workstation *result = nullptr;
-        std::for_each(_workstations.begin(), _workstations.end(), [&](Workstation *workstation) {
-            if (!isNextStation(workstation))
-                result = workstation;
-        });
-        return result;
-    }
-
-    bool LineManager::isNextStation(const Workstation *workstation) const {
-        bool result = false;
-        std::for_each(_workstations.begin(), _workstations.end(), [&](Workstation *station) {
-            if (station->getNextStation() == workstation)
-                result = true;
-        });
+        std::unordered_map<std::string, int> hashmap;
+        for (const auto &workstation : _workstations) {
+            push(hashmap, workstation->getItemName());
+            if (workstation->getNextStation() != nullptr)
+                push(hashmap, workstation->getNextStation()->getItemName());
+        }
+        for (const auto &each : hashmap) {
+            if (!each.second) {
+                std::for_each(_workstations.begin(), _workstations.end(), [&](Workstation *workstation) {
+                    if (workstation->getItemName() == each.first) result = workstation;
+                });
+            }
+        }
         return result;
     }
 }

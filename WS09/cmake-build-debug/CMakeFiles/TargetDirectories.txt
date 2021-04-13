@@ -1,0 +1,3 @@
+/Users/rootuser/Desktop/OOP345NAA/WS09/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/rootuser/Desktop/OOP345NAA/WS09/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rootuser/Desktop/OOP345NAA/WS09/cmake-build-debug/CMakeFiles/WS09.dir
