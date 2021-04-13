@@ -88,18 +88,17 @@ namespace sdds {
     Workstation *LineManager::firstStation() const {
         Workstation *result = nullptr;
         std::unordered_map<std::string, int> hashmap;
-        for (const auto &workstation : _workstations) {
+        for (auto &workstation : _workstations) {
             push(hashmap, workstation->getItemName());
             if (workstation->getNextStation() != nullptr)
                 push(hashmap, workstation->getNextStation()->getItemName());
         }
-        for (const auto &each : hashmap) {
-            if (!each.second) {
-                std::for_each(_workstations.begin(), _workstations.end(), [&](Workstation *workstation) {
-                    if (workstation->getItemName() == each.first) result = workstation;
-                });
-            }
-        }
+
+        for (const auto &each : hashmap)
+            if (!each.second)
+                for (auto &workstation : _workstations)
+                    if (workstation->getItemName() == each.first)
+                        result = workstation;
         return result;
     }
 }
